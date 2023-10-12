@@ -39,6 +39,5 @@ Version 2.0 of the image classification model offers improved performance with a
 
 Thank you for your understanding and support.
 
-Best regards,
-[Your Name]
+Best regards
 
