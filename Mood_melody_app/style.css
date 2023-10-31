@@ -1,0 +1,56 @@
+button.css-7ym5gk.ef3psqc11 {
+    background-color: rgb(175 241 255);
+    border-color:rgb(175 241 255); ;
+}
+
+
+.css-7ym5gk.ef3psqc11:focus:not(:active) {
+    border-color:  rgb(175 241 255);
+    color:rgb(86, 85, 85);
+    /* background-color: rgb(208, 241, 249); */
+}
+
+.css-7ym5gk.ef3psqc11:hover {
+    border-color: white;
+    color:rgb(86, 85, 85);
+    background-color: rgb(208, 241, 249);
+}
+
+.css-19rxjzo{
+    background-color: red;
+}
+
+.css-19rxjzo:hover {
+    border-color: rgb(237, 106, 106);
+    background-color: rgb(237, 106, 106);
+    color: rgb(212, 212, 212) ;
+}
+
+.css-19rxjzo:focus:not(:active) {
+    border-color: rgb(255, 75, 75);
+    color:rgb(212, 212, 212) ;;
+}
+
+/* element.style.menu .nav-item .nav-link.active[data-v-5af006b8] {
+    background-color: rgb(175 241 255);
+} */
+
+
+/* element.style.menu .nav-item .nav-link.active[data-v-5af006b8] {
+    background-color: rgb(237, 106, 106);
+} */
+
+/* #app.menu {
+    font-family: monospace;
+} */
+/* menu.container-xxl.d-flex.flex-column.flex-shrink-0.p-3 {
+    font-family: monospace;
+}
+
+element.style {
+    font-family: monospace;
+} */
+
+.container-xxl.d-flex.flex-column.flex-shrink-0.p-3 {
+    background-color: rgb(210,117,114);
+}
