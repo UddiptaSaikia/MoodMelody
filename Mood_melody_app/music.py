@@ -6,7 +6,7 @@ import cv2
 from keras.models import model_from_json
 import numpy as np
 import av
-from keras.preprocessing.image import img_to_array
+from tensorflow.keras.preprocessing.image import img_to_array
 from streamlit_webrtc import webrtc_streamer, VideoTransformerBase, RTCConfiguration, VideoProcessorBase, WebRtcMode
 import webbrowser
 import os
@@ -18,13 +18,13 @@ st.set_page_config(**PAGE_CONFIG)
 # load model 
 emotion_dict = {0 : 'angry', 1: 'happy', 2: 'sad', 3:'neutral'}
 # load json and create model
-json_file = open('final_model.json', 'r')
+json_file = open('../Deployment/Version 2.0/Emotion_detector.json', 'r')
 loaded_model_json = json_file.read()
 json_file.close()
 classifier = model_from_json(loaded_model_json)
 
 # load weights into new model
-classifier.load_weights("final_model.h5")
+classifier.load_weights("../Deployment/Version 2.0/Emotion_detector.h5")
 
 
 
@@ -37,7 +37,7 @@ except:
 
 def extract_features(image):
     feature = np.array(image)
-    feature = feature.reshape(1,48,48,1)
+    feature = feature.reshape(1,224,224,3)
     return feature/255.0
 
 #load face using cv2 haarcascade 
